@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link
+      href="//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="modal-bg">
+      <div class="modal">
+        <form>
+          <div class="form-section">
+            <div class="cont">
+              <h3>Add Revenue Group</h3>
+              <div class="cont0">
+                <label for="Revenue">Revenue Group Title</label>
+                <input type="text" value="Fashion - 15%" readonly />
+              </div>
+            </div>
+            <div class="cont1">
+              <label for="conditions">if</label
+              ><select id="conditions">
+                <option value="all">ALL</option>
+                <option value="some">SOME</option>
+                <option value="none">NONE</option>
+              </select>
+              <label for="condition">of the below conditions are met</label>
+            </div>
+            <div class="cont2">
+              <select id="dropdown1">
+                <option value="aff_sub">aff_sub</option>
+                <option value="aff_sub1">aff_sub1</option>
+                <option value="aff_sub2">aff_sub2</option>
+              </select>
+              <select id="dropdown2">
+                <option value="is">is</option>
+                <option value="is not">is not</option>
+              </select>
+              <input
+                type="text"
+                class="input1"
+                placeholder="insert parameter"
+              />
+              <button class="add-rule" disabled>add rule</button>
+              <button class="remove" disabled>
+                <i class="fas fa-minus"></i>
+              </button>
+              <button class="add"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="cont3">
+              <label for="number">then the revenue is</label>
+              <input class="number" type="number" value="15" readonly />
+              <label for="number">%</label>
+            </div>
+            <div class="cont4">
+              <button class="confirm">Confirm</button>
+              <button class="cancel">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal2">
+        <ul class="list"></ul>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
