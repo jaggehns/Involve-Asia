@@ -199,3 +199,13 @@ select {
     font-size: 40%;
   }
 }
+@media (max-height: 667px) and (max-width: 375px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media (max-height: 568px) and (max-width: 320px) {
+  html {
+    font-size: 18%;
+  }
+}
