@@ -188,12 +188,8 @@ select {
       font-size: 50%;
     }
   }
-  @media screen and (max-height: 500px) {
-    html {
-      font-size: 7%;
-    }
-  }
 
+  /* Mobile responsiveness */
   @media (max-height: 736px) and (max-width: 414px) {
     html {
       font-size: 40%;
