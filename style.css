@@ -192,4 +192,10 @@ select {
   select {
     width: 1%;
   }
-} ;
+}
+
+@media (max-height: 736px) and (max-width: 414px) {
+  html {
+    font-size: 40%;
+  }
+}
